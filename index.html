@@ -9,6 +9,7 @@ header('Access-Control-Allow-Origin: *');
     <link rel="icon" type="image/png" href="images/ico/favicon.ico" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -24,6 +25,8 @@ header('Access-Control-Allow-Origin: *');
     
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD_ZAHyvZx-_3Fy66piMrK-ne4NQEoOv4&callback=initMap" async defer></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
     
     <!-- Fonctions JS -->
     <script src="functions/diaporama/diaporama.js"></script>
@@ -32,7 +35,11 @@ header('Access-Control-Allow-Origin: *');
    
    
     <script src="functions/map/marqueur/apiLyon.js"></script>
+    <script src="functions/map/marqueur/functionsApi/créationMarqueurPrototype.js"></script>
     <script src="functions/map/marqueur/functionsApi/tousLesMarqueurs.js"></script>
+    <script src="functions/map/marqueur/functionsApi/couleursDesMarqueurs.js"></script>
+    <script src="functions/map/marqueur/functionsApi/regroupementDesMarqueurs.js"></script>
+    
     <script src="functions/map/marqueur/functionsApi/affichePanneau.js"></script>
         
     <script src="functions/panneau/clickDuPanneau.js"></script>
