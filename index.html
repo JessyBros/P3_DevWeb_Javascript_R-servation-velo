@@ -12,15 +12,37 @@ header('Access-Control-Allow-Origin: *');
 </head>
 
 <body>
-    <script src="ajax.js"></script>
+<div id="try"></div>
+    <script src="view/viewDiaporamaExplicative.js"></script>
+    <script src="view/viewReservationVelo.js"></script>
+    
+     <!-- Appel Api, fonction ajaxget -->
+    <script src="ajaxGet/ajax.js"></script>
+    
+     <!-- bibliothèque jquery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    
+    <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD_ZAHyvZx-_3Fy66piMrK-ne4NQEoOv4&callback=initMap" async defer></script>
-    <script src="view.js"></script>
-    <script src="function/diaporama/diaporama.js"></script>
-    <script src="function/map/map.js"></script>
-    <script src="function/marqueur/marqueur.js"></script>
-    <script src="function/panneau/clickDuPanneau.js"></script>
+    
+    <!-- Fonctions JS -->
+    <script src="functions/diaporama/diaporama.js"></script>
+    
+    <script src="functions/map/map.js"></script>
    
+   
+    <script src="functions/map/marqueur/apiLyon.js"></script>
+    <script src="functions/map/marqueur/functionsApi/tousLesMarqueurs.js"></script>
+    <script src="functions/map/marqueur/functionsApi/affichePanneau.js"></script>
+        
+    <script src="functions/panneau/clickDuPanneau.js"></script>
+    <script src="functions/panneau/canvas/canvas.js"></script>
+    <script src="functions/panneau/signature/signatureSupression.js"></script>
+    <script src="functions/panneau/signature/signatureValidation.js"></script>
+    
+    <script src="functions/footer/minuteur/startTimer.js"></script>
+    <script src="functions/footer/minuteur/minuteur.js"></script>
+   <script src="functions/footer/webStorage/webStorage.js"></script>
 
 </body>
 

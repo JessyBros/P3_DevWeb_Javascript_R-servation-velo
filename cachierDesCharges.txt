@@ -1,0 +1,6 @@
+
+obligatoire:
+- utiliser le WebStorage
+
+facultatif:
+- si possible gérer le regroupement de marqueurs

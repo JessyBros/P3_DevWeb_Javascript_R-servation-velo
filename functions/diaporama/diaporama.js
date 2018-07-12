@@ -1,3 +1,4 @@
+// Un diaporama sur 4 images qui défilent.
 $(function(){
     
          setInterval(function(){ // Le diaporama défile toutes les 15 secondes
