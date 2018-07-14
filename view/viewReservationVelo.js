@@ -16,7 +16,7 @@ pageMap.style.justifyContent = "space-around";
 var conteneurMap = document.createElement('div');
 pageMap.appendChild(conteneurMap);
 conteneurMap.id = "map";
-conteneurMap.style.height = "99%";
+conteneurMap.style.height = "68.5%";
 conteneurMap.style.minHeight = "400px";
 conteneurMap.style.width = "99%";
 conteneurMap.style.minWidth = "280px";
@@ -214,21 +214,26 @@ signatureValider.style.borderRadius = "10px";
 // Construction "FOOTER" HTML - CSS  \\ 
 // Page 2 centrer en bas de la carte et du panneau\\
 var footer = document.createElement("div");
+pageMap.appendChild(footer);
 footer.style.textAlign = "center";
 footer.style.marginTop = "2%";
 footer.style.fontSize = "25px";
 footer.style.color = "#03224C";
 footer.id = "durationTimer";
-
+  
+    
+    
 var veloNonDisponible = document.createElement("span");
+footer.appendChild(veloNonDisponible);
 veloNonDisponible.style.position = "relative";
 veloNonDisponible.style.color = "red";
 
 
 var etatStation = document.createElement("div");
-
+footer.appendChild(etatStation);
 
 var utilisateurSignature = document.createElement("img");
+footer.appendChild(utilisateurSignature);
 utilisateurSignature.id = "saveSignature";
 utilisateurSignature.style.borderRadius = "5px";
 utilisateurSignature.style.border = "1px solid black";

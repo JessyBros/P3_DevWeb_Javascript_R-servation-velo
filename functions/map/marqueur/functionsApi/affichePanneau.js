@@ -9,8 +9,12 @@ function affichelePanneau(){
              evenementUnique = false;
 
              pageMap.appendChild(panneau);
+                 // Place les élements du FOOTER \\
+    pageMap.appendChild(footer);
+    footer.appendChild(veloNonDisponible);
+    footer.appendChild(etatStation);
+    footer.appendChild(utilisateurSignature);
 
-             conteneurMap.style.height = "68.5%";
              conteneurMap.style.width = "65%";
          });
      });

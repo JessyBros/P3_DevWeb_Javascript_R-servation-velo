@@ -1,11 +1,4 @@
-signatureValider.onclick = function () {
-
-    // Place les élements du FOOTER \\
-    pageMap.appendChild(footer);
-    footer.appendChild(veloNonDisponible);
-    footer.appendChild(etatStation);
-    footer.appendChild(utilisateurSignature);
-    
+signatureValider.onclick = function () {    
 
     if (recuperationMarqueur.available_bike_stands == 0) { // si il n'y a plus de vélo disponible
 
@@ -48,7 +41,7 @@ signatureValider.onclick = function () {
 
 
         etatStation.innerHTML = "1 VÉLO RÉSERVÉ À LA STATION <span style=\"color:red;\">" +
-            recuperationMarqueur.name + "</span> POUR " + "<span style=\"color:red;\"id=\"time\">20:00</span> MINUTES !";
+            recuperationMarqueur.name + "</span> POUR " + "<span style=\"color:red;\"id=\"time\"><span id=\"minute\">20</span>.<span id=\"seconde\">00</span></span> MINUTES !";
 
         panneau.style.height = "400px";
 
@@ -65,3 +58,4 @@ signatureValider.onclick = function () {
     minuteur();
 
 };
+   
