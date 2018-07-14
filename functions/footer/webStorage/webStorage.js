@@ -2,13 +2,18 @@ function webStorage() {
   
     //Check browser support
     if (typeof(Storage) !== "undefined") {
+        localStorage.clear();
         // local store, on récupère la valeur "ok"
         localStorage.setItem("VeloSelected",etatStation.innerHTML);
         // indique ce que le local à sauvegarder dans l'id "try"
-        document.getElementById("time").innerHTML = localStorage.getItem("VeloSelected");
+        etatStation.innerHTML = localStorage.getItem("VeloSelected");
     } else {
-        document.getElementById("try").innerHTML = "Désolé, votre navigateur ne supporte pas Web Storage...";
+        etatStation.innerHTML = "Désolé, votre navigateur ne supporte pas Web Storage...";
     }
 }
 
 
+if (chorno.innerHTML > "00.01")
+    {
+        body.style.backgroundColor="red";
+    }
