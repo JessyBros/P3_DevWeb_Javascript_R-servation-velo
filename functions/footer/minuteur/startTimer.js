@@ -21,6 +21,16 @@ function startTimer(duration, affiche)
                 timer = duration;
             }
             
+            if (document.querySelector('#minute').innerHTML == "00" & document.querySelector('#seconde').innerHTML == "01") 
+    {
+        footer.innerHTML ="";
+       etatStation.innerHTML ="";
+       utilisateurSignature.innerHTML ="";
+       etatStation.innerHTML ="";
+        localStorage.clear();
+        
+    }
+            
         }, 1000);
                     
 

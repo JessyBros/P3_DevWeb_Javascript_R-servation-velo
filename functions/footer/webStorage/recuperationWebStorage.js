@@ -6,3 +6,4 @@ var minute = document.querySelector('#minute').innerHTML;
 var chrono = minute + '.' +  seconde;
 
 startTimer((60*chrono-1), document.querySelector('#time'));
+

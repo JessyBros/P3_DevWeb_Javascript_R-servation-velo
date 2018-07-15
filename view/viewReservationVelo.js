@@ -35,7 +35,7 @@ panneau.style.position = "relative";
 panneau.style.backgroundColor = "gainsboro";
 panneau.style.border = "2px solid black";
 panneau.style.height = "400px";
-panneau.style.marginTop = "1%";
+panneau.style.margin=" 1% auto auto auto";
 
 var panneauTitre = document.createElement('h1');
 panneau.appendChild(panneauTitre);
@@ -235,6 +235,5 @@ footer.appendChild(etatStation);
 var utilisateurSignature = document.createElement("img");
 footer.appendChild(utilisateurSignature);
 utilisateurSignature.id = "saveSignature";
-utilisateurSignature.style.borderRadius = "5px";
-utilisateurSignature.style.border = "1px solid black";
+
 // -FIN- Construction "FOOTER" HTML - CSS  \\

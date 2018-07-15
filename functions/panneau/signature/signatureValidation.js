@@ -50,7 +50,10 @@ signatureValider.onclick = function () {
             panneauEtat.innerHTML = "&nbsp CLOSE";
             panneauEtat.style.color = "red";
         }
-
+        
+        utilisateurSignature.style.borderRadius = "5px";
+        utilisateurSignature.style.border = "1px solid black";
+        
         webStorage();
 
     }

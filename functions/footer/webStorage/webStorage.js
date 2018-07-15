@@ -11,9 +11,3 @@ function webStorage() {
         etatStation.innerHTML = "Désolé, votre navigateur ne supporte pas Web Storage...";
     }
 }
-
-
-if (chorno.innerHTML > "00.01")
-    {
-        body.style.backgroundColor="red";
-    }
