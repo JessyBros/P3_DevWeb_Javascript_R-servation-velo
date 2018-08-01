@@ -1,3 +1,8 @@
+/* Couleurs des marqueurs varient selon le nombre de vélo disponible dans la station
+ VERT supérieur à 5 vélo
+ BLEU entre 1 et 5 vélo compris
+ ROUGE 0 vélo */
+
 function couleurDesMarqueurs(i) {
 
     if (apiStations[i].available_bike_stands > 5) {

@@ -21,20 +21,17 @@ function startTimer(duration, affiche)
                 timer = duration;
             }
             
+            /* si chronomètre = 0.00 le footer et le local storage sont effacés.*/
             if (document.querySelector('#minute').innerHTML == "00" & document.querySelector('#seconde').innerHTML == "01") 
-    {
-        footer.innerHTML ="";
-       etatStation.innerHTML ="";
-       utilisateurSignature.innerHTML ="";
-       etatStation.innerHTML ="";
-        localStorage.clear();
-        
-    }
+            {
+                footer.innerHTML ="";
+                etatStation.innerHTML ="";
+                utilisateurSignature.innerHTML ="";
+                etatStation.innerHTML ="";
+                localStorage.clear();
+            }
             
         }, 1000);
-                    
-
     }
 
  
- /*affiche.innerHTML ="<span id=\"minute\">" + minutes + "</span>" + : +"<span id=\"seconde\">" + seconds + "</span>";*/

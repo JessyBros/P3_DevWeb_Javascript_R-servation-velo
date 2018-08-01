@@ -1,7 +1,6 @@
-// Insertion des marqueurs avec fonctionnalités
+// Utilisation Api.JCDECAUX avec la fonction ajacGET
 
 //valeur global 
-
 var recuperationMarqueur;
 var augmenteDeUnVeloDisponible;
 var apiStations;

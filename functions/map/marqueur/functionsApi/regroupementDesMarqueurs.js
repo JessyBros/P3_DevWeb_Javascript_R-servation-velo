@@ -1,3 +1,4 @@
+/* Regroupement des marqueurs par groupe selon le zoom de la carte */
 function regroupementDesMarqueurs(){
     var clusterStyles = [
 

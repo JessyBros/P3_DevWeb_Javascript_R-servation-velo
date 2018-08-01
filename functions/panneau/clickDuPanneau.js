@@ -17,4 +17,4 @@ panneauButton.onclick = function () {
 
     canvas();
    
-}; // Fin de l'acolade panneauButton.onclick()
+}; 

@@ -1,6 +1,7 @@
 signatureValider.onclick = function () {    
 
-    if (recuperationMarqueur.available_bike_stands == 0) { // si il n'y a plus de vélo disponible
+    if (recuperationMarqueur.available_bike_stands == 0)
+    { // si il n'y a plus de vélo disponible
 
         veloNonDisponible.innerHTML = "Désolé, la station <span style=\"color:black;\">" +
             recuperationMarqueur.name + "</span> " + " ne possède plus de vélo disponible pour le moment.";
@@ -15,10 +16,10 @@ signatureValider.onclick = function () {
             utilisateurSignature.style.visibility = "visible";
             etatStation.style.visibility = "visible";
         }, 5000);
-
-
-        
-    } else { // Si il y a des vélo disponible
+    }
+    
+    else 
+    { // Si il y a des vélo disponible
 
         // lorque l'utilisateur valide un autre vélo, l'ancien récupère son vélo
         augmenteDeUnVeloDisponible.available_bike_stands = augmenteDeUnVeloDisponible.available_bike_stands + 1;
@@ -45,7 +46,7 @@ signatureValider.onclick = function () {
 
         panneau.style.height = "400px";
 
-        if (recuperationMarqueur.available_bike_stands == 0) // si à cause de la réservation, il n'y a plus de vélo, état de la station = CLOSE
+        if (recuperationMarqueur.available_bike_stands == 0) // si à cause de la réservation, il n'y a plus de vélo, état de la station(panneau) = CLOSE
         {
             panneauEtat.innerHTML = "&nbsp CLOSE";
             panneauEtat.style.color = "red";
@@ -54,11 +55,11 @@ signatureValider.onclick = function () {
         utilisateurSignature.style.borderRadius = "5px";
         utilisateurSignature.style.border = "1px solid black";
         
-        webStorage();
+        webStorage(); // enregistre les informations dans le webstorage
 
     }
 
-    minuteur();
+    minuteur(); // minuteur standard
 
 };
    

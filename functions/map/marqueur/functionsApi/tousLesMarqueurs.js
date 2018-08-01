@@ -1,9 +1,8 @@
-var marqueurs = [];
+var marqueurs = []; // tableau contenant tous les marqueurs.
 
 function tousLesMarqueurs() {
-
-
-    // Crée mes Marqueurs - Boucle autant qu'il y a de station
+    
+    // Crée mes Marqueurs - Boucle autant qu'il y a de station avec leur propre données
     for (var i = 0; i < apiStations.length; i++) {
 
         couleurDesMarqueurs(i);
@@ -31,6 +30,5 @@ function tousLesMarqueurs() {
         })
         (i);
     }
-
 
 }
