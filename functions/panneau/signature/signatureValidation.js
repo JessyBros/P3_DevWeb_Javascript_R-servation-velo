@@ -7,14 +7,14 @@ signatureValider.onclick = function () {
             recuperationMarqueur.name + "</span> " + " ne possède plus de vélo disponible pour le moment.";
 
         //cache les signatures canvas + velo réservés.
-        utilisateurSignature.style.visibility = "hidden";
-        etatStation.style.visibility = "hidden";
+        utilisateurSignature.style.opacity = 0;
+        etatStation.style.opacity = 0;
 
         // au bout de 5 seconde refait apparaître les signatures et le message d'indisponibilité disparait.
         setTimeout(function () {
             veloNonDisponible.textContent = "";
-            utilisateurSignature.style.visibility = "visible";
-            etatStation.style.visibility = "visible";
+            utilisateurSignature.style.opacity = 1;
+            etatStation.style.opacity = 1;
         }, 5000);
     }
     
@@ -57,9 +57,10 @@ signatureValider.onclick = function () {
         
         webStorage(); // enregistre les informations dans le webstorage
 
+        minuteur(); // minuteur standard
     }
 
-    minuteur(); // minuteur standard
+    
 
 };
    

@@ -6,7 +6,7 @@ header('Access-Control-Allow-Origin: *');
 
 <head>
     <meta charset="Utf-8" />
-    <link rel="icon" type="image/png" href="images/ico/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <META NAME="Description" CONTENT="Site velo'v. Permet au internautes de réservés un vélo n'importe où dans la ville de Lyon. Choisir une station sur la map à travers différent marqueur et réserver un vélo pour 20  minutes.">
